@@ -1,11 +1,12 @@
-import WalletButton from "./components/WalletButton";
+import styles from "../../styles/Home.module.css";
+import UserStatus from "../../components/UserStatus";
 
 export default function Home() {
   return (
-    <main className="p-4 pb-10 min-h-[100vh] flex items-center justify-center container max-w-screen-lg mx-auto">
-      <div className="py-20">
-        <div className="flex justify-center mb-20">
-          <WalletButton />
+    <main className={styles.main}>
+      <div className={styles.container}>
+        <div className={styles.statusContainer}>
+          <UserStatus />
         </div>
       </div>
     </main>
