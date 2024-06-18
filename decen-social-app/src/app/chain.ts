@@ -1,6 +1,6 @@
 import { defineChain } from "thirdweb";
 
-const chain = defineChain({
+export const chain = defineChain({
   id: 59141,
   explorers: [
     {
@@ -24,5 +24,3 @@ const chain = defineChain({
   slug: "linea-sepolia",
   title: "Linea Sepolia Testnet",
 });
-
-export default chain;
