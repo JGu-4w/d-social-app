@@ -2,7 +2,7 @@ import { getContract } from "thirdweb";
 import { client } from "./client";
 import { chain } from "./chain";
 
-const CONTRACT_ADDRESS = process.env.CONTRACT_ADDRESS;
+const CONTRACT_ADDRESS = process.env.NEXT_PUBLIC_CONTRACT_ADDRESS;
 const CONTRACT_ABI = [
   {
     type: "event",
@@ -83,7 +83,7 @@ const CONTRACT_ABI = [
   },
 ] as const;
 
-export const contract = getContract({
+export const CONTRACT = getContract({
   client,
   chain: chain,
   address: CONTRACT_ADDRESS!,
