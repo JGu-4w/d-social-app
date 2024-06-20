@@ -10,10 +10,10 @@ import {
 } from "thirdweb/react";
 import { prepareContractCall } from "thirdweb";
 
-import styles from "../styles/Home.module.css";
+import styles from "../../styles/Home.module.css";
 import WalletButton from "./WalletButton";
 import { CONTRACT } from "@/app/contract";
-import { truncateAddress } from "../utils/truncate";
+import { truncateAddress } from "../../utils/truncate";
 
 export default function UserStatus() {
   const wallet = useActiveWallet();
